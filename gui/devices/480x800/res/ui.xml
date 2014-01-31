@@ -989,7 +989,7 @@
 				<condition var1="tw_show_reboot" var2="0" />
 				<placement x="%col_center_x%" y="%row4_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Back</text>
+				<text>返回</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_clear_destination=%tw_back%</action>
@@ -1002,7 +1002,7 @@
 				<condition var1="tw_show_reboot" var2="1" />
 				<placement x="%col_center_x%" y="%row4_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Reboot System</text>
+				<text>重启系统</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_back=main2</action>
@@ -1084,13 +1084,13 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_text_y%" placement="5" />
-				<text>Factory Reset</text>
+				<text>出厂设置</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row2_text_y%" placement="5" />
-				<text>Wipes Data, Cache, and Dalvik</text>
+				<text>清空Data, Cache, and Dalvik</text>
 			</object>
 
 			<object type="text" color="%text_color%">
@@ -1104,7 +1104,7 @@
 				<condition var1="tw_has_data_media" var2="1" />
 				<font resource="font" />
 				<placement x="%center_x%" y="%row3_text_y%" placement="5" />
-				<text>(not including internal storage)</text>
+				<text>(不包括内部储存)</text>
 			</object>
 
 			<object type="text" color="%text_color%">
@@ -1117,26 +1117,26 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row5_text_y%" placement="5" />
-				<text>Most of the time this is</text>
+				<text>很多时候这是您唯一一次</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row6_text_y%" placement="5" />
-				<text>the only wipe that you need.</text>
+				<text>必要的清空.</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row16_text_y%" placement="5" />
-				<text>Press back button to cancel.</text>
+				<text>按返回键取消.</text>
 			</object>
 
 			<object type="button">
 				<highlight color="%highlight_color%" />
 				<placement x="%col1_x%" y="%wipe_button_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Advanced Wipe</text>
+				<text>高级清空</text>
 				<image resource="main_button" />
 				<action function="page">advancedwipe</action>
 			</object>
@@ -1149,7 +1149,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%col2_x%" y="%wipe_button_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Format Data</text>
+				<text>格式化数据</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="page">formatdata</action>
@@ -1172,7 +1172,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%slider_text_y%" placement="4" />
-				<text>Swipe to Factory Reset</text>
+				<text>滑动恢复出厂</text>
 			</object>
 
 			<object type="action">
@@ -1194,7 +1194,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_header_y%" placement="5" />
-				<text>Wipe Menu</text>
+				<text>主菜单</text>
 			</object>
 
 			<object type="partitionlist">
@@ -1202,7 +1202,7 @@
 				<placement x="%listbox_x%" y="%row1_header_y%" w="%listbox_width%" h="%wipe_list_height%" />
 				<header background="%fileselector_header_background%" textcolor="%fileselector_header_textcolor%" separatorcolor="%fileselector_header_separatorcolor%" separatorheight="%fileselector_header_separatorheight%" />
 				<fastscroll linecolor="%fastscroll_linecolor%" rectcolor="%fastscroll_rectcolor%" w="%fastscroll_w%" linew="%fastscroll_linew%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
-				<text>Select Partitions to Wipe:</text>
+				<text>选择清空的分区:</text>
 				<icon selected="checkbox_true" unselected="checkbox_false" />
 				<separator color="%fileselector_separatorcolor%" height="%fileselector_separatorheight%" />
 				<background color="%listbox_background%" />
@@ -1228,7 +1228,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%slider_text_y%" placement="4" />
-				<text>Swipe to Wipe</text>
+				<text>滑动以清空</text>
 			</object>
 
 			<object type="action">
@@ -1250,31 +1250,31 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_header_y%" placement="5" />
-				<text>Format Data will wipe all of your apps,</text>
+				<text>格式化数据会使你永远地丢失数据,</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_text_y%" placement="5" />
-				<text>backups, pictures, videos, media, and</text>
+				<text>备份, 艳照, 视频, 媒体, 并</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row2_text_y%" placement="5" />
-				<text>removes encryption on internal storage.</text>
+				<text>删除内部储存的加密凭据.</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row3_text_y%" placement="5" />
-				<text>This cannot be undone. Press back to cancel.</text>
+				<text>此操作不可逆. 按返回键取消操作.</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row4_text_y%" placement="5" />
-				<text>Type yes to continue.</text>
+				<text>输入“yes”继续.</text>
 			</object>
 
 			<object type="input">
@@ -1330,7 +1330,7 @@
 				<fill color="%button_fill_color%" />
 				<placement x="%col1_x%" y="%row1_header_y%" w="%button_fill_full_width%" h="%button_fill_quarter_height%" placement="5" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Backup Name: %tw_backup_name%</text>
+				<text>备份名称: %tw_backup_name%</text>
 				<actions>
 					<action function="set">tw_fileexists=0</action>
 					<action function="page">backupname1</action>
@@ -1342,7 +1342,7 @@
 				<placement x="%listbox_x%" y="%row2_text_y%" w="%listbox_width%" h="%backup_list_height%" />
 				<header background="%fileselector_header_background%" textcolor="%fileselector_header_textcolor%" separatorcolor="%fileselector_header_separatorcolor%" separatorheight="%fileselector_header_separatorheight%" />
 				<fastscroll linecolor="%fastscroll_linecolor%" rectcolor="%fastscroll_rectcolor%" w="%fastscroll_w%" linew="%fastscroll_linew%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
-				<text>Select Partitions to Back Up:</text>
+				<text>选择要备份的分区:</text>
 				<icon selected="checkbox_true" unselected="checkbox_false" />
 				<separator color="%fileselector_separatorcolor%" height="%fileselector_separatorheight%" />
 				<background color="%listbox_background%" />
@@ -1360,7 +1360,7 @@
 				<fill color="%button_fill_color%" />
 				<placement x="%col1_x%" y="%backup_button_row1%" w="%button_fill_main_width%" h="%button_fill_quarter_height%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>No Encryption</text>
+				<text>未选择加密</text>
 				<actions>
 					<action function="page">backupencryption</action>
 				</actions>
@@ -1375,7 +1375,7 @@
 				<fill color="%button_fill_color%" />
 				<placement x="%col1_x%" y="%backup_button_row1%" w="%button_fill_main_width%" h="%button_fill_quarter_height%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Using Encryption</text>
+				<text>正使用加密</text>
 				<actions>
 					<action function="set">tw_password_not_match=0</action>
 					<action function="page">backupencryption</action>
@@ -1387,7 +1387,7 @@
 				<fill color="%button_fill_color%" />
 				<placement x="%col2_x%" y="%backup_button_row1%" w="%button_fill_main_width%" h="%button_fill_quarter_height%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Refresh Sizes</text>
+				<text>刷新大小</text>
 				<action function="refreshsizes"></action>
 			</object>
 
@@ -1396,7 +1396,7 @@
 				<fill color="%button_fill_color%" />
 				<placement x="%col1_x%" y="%backup_button_row2%" w="%button_fill_full_width%" h="%button_fill_quarter_height%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Storage: %tw_storage_display_name% (%tw_storage_free_size% MB)</text>
+				<text>储存信息: %tw_storage_display_name% (%tw_storage_free_size% MB)</text>
 				<actions>
 					<action function="set">tw_back=backup</action>
 					<action function="page">selectstorage</action>
@@ -1406,7 +1406,7 @@
 			<object type="checkbox">
 				<placement x="%col1_x%" y="%row15_text_y%" />
 				<font resource="font" color="%text_color%" />
-				<text>Enable compression.</text>
+				<text>启用压缩.</text>
 				<data variable="tw_use_compression" />
 				<image checked="checkbox_true" unchecked="checkbox_false" />
 			</object>
@@ -1414,7 +1414,7 @@
 			<object type="checkbox">
 				<placement x="%col1_x%" y="%row16_text_y%" />
 				<font resource="font" color="%text_color%" />
-				<text>Skip MD5 generation during backup.</text>
+				<text>跳过MD5校验.</text>
 				<data variable="tw_skip_md5_generate" />
 				<image checked="checkbox_true" unchecked="checkbox_false" />
 			</object>
@@ -1428,7 +1428,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%slider_text_y%" placement="4" />
-				<text>Swipe to Back Up</text>
+				<text>滑动开始备份</text>
 			</object>
 
 			<object type="action">
@@ -1461,7 +1461,7 @@
 			<object type="text" color="%text_color%">
 				<placement x="%center_x%" y="%row1_header_y%" placement="5" />
 				<font resource="font" />
-				<text>Please Enter a Backup Name</text>
+				<text>亲，请输入备份名</text>
 			</object>
 
 			<object type="input">
@@ -1484,14 +1484,14 @@
 				<condition var1="tw_fileexists" var2="1" />
 				<placement x="%center_x%" y="%row5_text_y%" placement="5" />
 				<font resource="font" />
-				<text>A backup with that name already exists!</text>
+				<text>同名备份已存在!</text>
 			</object>
 
 			<object type="button">
 				<highlight color="%highlight_color%" />
 				<placement x="%col1_x%" y="%row2_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Append Date</text>
+				<text>添加日期</text>
 				<image resource="main_button" />
 				<action function="appenddatetobackupname"></action>
 			</object>
@@ -1500,7 +1500,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%col2_x%" y="%row2_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Cancel</text>
+				<text>取消</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_backup_name=(Auto Generate)</action>
@@ -1535,13 +1535,13 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_header_y%" placement="5" />
-				<text>Encrypt your backup?</text>
+				<text>加密您的备份?</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row2_text_y%" placement="5" />
-				<text>Please Enter A Password:</text>
+				<text>请输入密码:</text>
 			</object>
 
 			<object type="input">
@@ -1559,14 +1559,14 @@
 				<condition var1="tw_password_not_match" var2="1" />
 				<font resource="font" />
 				<placement x="%center_x%" y="%row4_text_y%" placement="5" />
-				<text>Passwords Do Not Match</text>
+				<text>密码不匹配</text>
 			</object>
 
 			<object type="button">
 				<highlight color="%highlight_color%" />
 				<placement x="%col_center_x%" y="%row2_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Cancel</text>
+				<text>取消</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_encrypt_backup=0</action>
@@ -1599,13 +1599,13 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_header_y%" placement="5" />
-				<text>Encrypt your backup?</text>
+				<text>加密您的备份?</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row2_text_y%" placement="5" />
-				<text>Please Enter Password Again:</text>
+				<text>请再次输入您的密码:</text>
 			</object>
 
 			<object type="input">
@@ -1625,7 +1625,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%col_center_x%" y="%row2_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Cancel</text>
+				<text>取消</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_encrypt_backup=0</action>
@@ -1711,7 +1711,7 @@
 				<fill color="%button_fill_color%" />
 				<placement x="%col1_x%" y="%row1_header_y%" w="%button_fill_full_width%" h="%button_fill_quarter_height%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Storage: %tw_storage_display_name% (%tw_storage_free_size% MB)</text>
+				<text>储存信息: %tw_storage_display_name% (%tw_storage_free_size% MB)</text>
 				<actions>
 					<action function="set">tw_back=restore</action>
 					<action function="page">selectstorage</action>
@@ -1723,7 +1723,7 @@
 				<placement x="%fileselector_x%" y="%row2_text_y%" w="%fileselector_width%" h="%fileselector_install_height%" />
 				<header background="%fileselector_header_background%" textcolor="%fileselector_header_textcolor%" separatorcolor="%fileselector_header_separatorcolor%" separatorheight="%fileselector_header_separatorheight%" />
 				<fastscroll linecolor="%fastscroll_linecolor%" rectcolor="%fastscroll_rectcolor%" w="%fastscroll_w%" linew="%fastscroll_linew%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
-				<text>Select Package to Restore:</text>
+				<text>选择还原点:</text>
 				<separator color="%fileselector_separatorcolor%" height="%fileselector_separatorheight%" />
 				<sort name="tw_gui_sort_order" />
 				<icon folder="folder_icon" file="file_icon" />
@@ -1781,13 +1781,13 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_header_y%" placement="5" />
-				<text>Backup Encrypted</text>
+				<text>备份已加密</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row2_text_y%" placement="5" />
-				<text>Please Enter Your Password:</text>
+				<text>请输入密码:</text>
 			</object>
 
 			<object type="input">
@@ -1807,14 +1807,14 @@
 				<condition var1="tw_password_fail" var2="1" />
 				<font resource="font" />
 				<placement x="%center_x%" y="%row4_text_y%" placement="5" />
-				<text>Password Failed, Please Try Again</text>
+				<text>密码不正确，请重试</text>
 			</object>
 
 			<object type="button">
 				<highlight color="%highlight_color%" />
 				<placement x="%col1_x%" y="%row2_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Cancel</text>
+				<text>取消</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_page_done=1</action>
@@ -1826,7 +1826,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%col2_x%" y="%row2_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Delete</text>
+				<text>删除</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_back=restore</action>
@@ -1862,7 +1862,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_text_y%" placement="5" />
-				<text>Trying Decryption with Your Password</text>
+				<text>正尝试用您提供的密码进行解密</text>
 			</object>
 
 			<object type="template" name="action_page_console" />
@@ -1904,7 +1904,7 @@
 				<placement x="%listbox_x%" y="%row1_header_y%" w="%listbox_width%" h="%backup_list_height%" />
 				<header background="%fileselector_header_background%" textcolor="%fileselector_header_textcolor%" separatorcolor="%fileselector_header_separatorcolor%" separatorheight="%fileselector_header_separatorheight%" />
 				<fastscroll linecolor="%fastscroll_linecolor%" rectcolor="%fastscroll_rectcolor%" w="%fastscroll_w%" linew="%fastscroll_linew%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
-				<text>Restoring: %tw_restore_name%</text>
+				<text>正还原: %tw_restore_name%</text>
 				<icon selected="checkbox_true" unselected="checkbox_false" />
 				<separator color="%fileselector_separatorcolor%" height="%fileselector_separatorheight%" />
 				<background color="%listbox_background%" />
@@ -1918,7 +1918,7 @@
 				<fill color="%button_fill_color%" />
 				<placement x="%col1_x%" y="%backup_button_row1%" w="%button_fill_main_width%" h="%button_fill_quarter_height%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Rename Backup</text>
+				<text>重命名备份</text>
 				<actions>
 					<action function="set">tw_backup_rename=</action>
 					<action function="set">tw_fileexists=0</action>
@@ -1931,7 +1931,7 @@
 				<fill color="%button_fill_color%" />
 				<placement x="%col2_x%" y="%backup_button_row1%" w="%button_fill_main_width%" h="%button_fill_quarter_height%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Delete Backup</text>
+				<text>删除备份</text>
 				<actions>
 					<action function="set">tw_back=restore</action>
 					<action function="set">tw_action=cmd</action>
@@ -1948,7 +1948,7 @@
 			<object type="checkbox">
 				<placement x="%col1_x%" y="%row15_text_y%" />
 				<font resource="font" color="%text_color%" />
-				<text>Enable MD5 verification of backup files.</text>
+				<text>对备份文件进行MD5校验.</text>
 				<data variable="tw_skip_md5_check" />
 				<image checked="checkbox_true" unchecked="checkbox_false" />
 			</object>
@@ -1956,7 +1956,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row16_text_y%" placement="5" />
-				<text>Package Date: %tw_restore_file_date%</text>
+				<text>日期: %tw_restore_file_date%</text>
 			</object>
 
 			<object type="slider">
@@ -1968,7 +1968,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%slider_text_y%" placement="4" />
-				<text>Swipe to Restore</text>
+				<text>滑动开始还原</text>
 			</object>
 
 			<object type="action">
@@ -1990,7 +1990,7 @@
 			<object type="text" color="%text_color%">
 				<placement x="%center_x%" y="%row1_header_y%" placement="5" />
 				<font resource="font" />
-				<text>Please Enter a New Backup Name</text>
+				<text>请输入一个新的备份名</text>
 			</object>
 
 			<object type="input">
@@ -2021,14 +2021,14 @@
 				<condition var1="tw_fileexists" var2="1" />
 				<placement x="%center_x%" y="%row5_text_y%" placement="5" />
 				<font resource="font" />
-				<text>A backup with that name already exists!</text>
+				<text>已存在同名备份!</text>
 			</object>
 
 			<object type="button">
 				<highlight color="%highlight_color%" />
 				<placement x="%col_center_x%" y="%row2_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Cancel</text>
+				<text>取消</text>
 				<image resource="main_button" />
 				<action function="page">restore_select</action>
 			</object>
@@ -2128,7 +2128,7 @@
 				<placement x="%listbox_x%" y="%row1_header_y%" w="%listbox_width%" h="%mount_list_height%" />
 				<header background="%fileselector_header_background%" textcolor="%fileselector_header_textcolor%" separatorcolor="%fileselector_header_separatorcolor%" separatorheight="%fileselector_header_separatorheight%" />
 				<fastscroll linecolor="%fastscroll_linecolor%" rectcolor="%fastscroll_rectcolor%" w="%fastscroll_w%" linew="%fastscroll_linew%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
-				<text>Select Partitions to Mount:</text>
+				<text>选择要挂载的分区:</text>
 				<icon selected="checkbox_true" unselected="checkbox_false" />
 				<separator color="%fileselector_separatorcolor%" height="%fileselector_separatorheight%" />
 				<background color="%listbox_background%" />
@@ -2141,7 +2141,7 @@
 				<fill color="%button_fill_color%" />
 				<placement x="%col1_x%" y="%mount_storage_row%" w="%button_fill_full_width%" h="%button_fill_quarter_height%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Storage: %tw_storage_display_name% (%tw_storage_free_size% MB)</text>
+				<text>储存信息: %tw_storage_display_name% (%tw_storage_free_size% MB)</text>
 				<actions>
 					<action function="set">tw_back=mount</action>
 					<action function="page">selectstorage</action>
@@ -2153,7 +2153,7 @@
 				<condition var1="tw_has_usb_storage" var2="1" />
 				<placement x="%col1_x%" y="row4_y" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Mount USB Storage</text>
+				<text>挂载USB储存</text>
 				<image resource="main_button" />
 				<action function="page">usb_mount</action>
 			</object>
@@ -2166,7 +2166,7 @@
 				</conditions>
 				<placement x="%col2_x%" y="row4_y" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Decrypt Data</text>
+				<text>解密数据</text>
 				<image resource="main_button" />
 				<action function="page">decrypt</action>
 			</object>
@@ -2190,26 +2190,26 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_header_y%" placement="5" />
-				<text>USB Storage Mounted</text>
+				<text>USB已挂载</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<placement x="%col1_x%" y="%row1_text_y%" />
 				<font resource="font" />
-				<text>Be sure to safely remove your device</text>
+				<text>在按卸载按钮前，</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<placement x="%col1_x%" y="%row2_text_y%" />
 				<font resource="font" />
-				<text>from your computer before unmounting!</text>
+				<text>请确保您已经从计算机上安全移除!</text>
 			</object>
 
 			<object type="button">
 				<highlight color="%highlight_color%" />
 				<placement x="%col1_x%" y="%row3_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Unmount</text>
+				<text>卸载</text>
 				<image resource="main_button" />
 				<action function="page">usb_umount</action>
 			</object>
@@ -2237,7 +2237,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_header_y%" placement="5" />
-				<text>Reboot Menu</text>
+				<text>重启菜单</text>
 			</object>
 
 			<object type="button">
@@ -2245,7 +2245,7 @@
 				<condition var1="tw_reboot_system" var2="1" />
 				<placement x="%col1_x%" y="%row1_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>System</text>
+				<text>重启到系统</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_back=reboot</action>
@@ -2266,7 +2266,7 @@
 				<condition var1="tw_reboot_poweroff" var2="1" />
 				<placement x="%col2_x%" y="%row1_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Power Off</text>
+				<text>关机</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_back=reboot</action>
@@ -2287,7 +2287,7 @@
 				<condition var1="tw_reboot_recovery" var2="1" />
 				<placement x="%col1_x%" y="%row2_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Recovery</text>
+				<text>重启到REC</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_back=reboot</action>
@@ -2364,13 +2364,13 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_header_y%" placement="5" />
-				<text>Settings</text>
+				<text>设置</text>
 			</object>
 
 			<object type="checkbox">
 				<placement x="%col1_x%" y="%row1_text_y%" />
 				<font resource="font" color="%text_color%" />
-				<text>Zip file signature verification.</text>
+				<text>ZIP签名验证.</text>
 				<data variable="tw_signed_zip_verify" />
 				<image checked="checkbox_true" unchecked="checkbox_false" />
 			</object>
@@ -2378,7 +2378,7 @@
 			<object type="checkbox">
 				<placement x="%col1_x%" y="%row2_text_y%" />
 				<font resource="font" color="%text_color%" />
-				<text>Use rm -rf instead of formatting.</text>
+				<text>使用 rm -rf 代替格式化.</text>
 				<data variable="tw_rm_rf" />
 				<image checked="checkbox_true" unchecked="checkbox_false" />
 			</object>
@@ -2386,7 +2386,7 @@
 			<object type="checkbox">
 				<placement x="%col1_x%" y="%row3_text_y%" />
 				<font resource="font" color="%text_color%" />
-				<text>Skip MD5 generation during backup.</text>
+				<text>备份跳过MD5校验.</text>
 				<data variable="tw_skip_md5_generate" />
 				<image checked="checkbox_true" unchecked="checkbox_false" />
 			</object>
@@ -2394,7 +2394,7 @@
 			<object type="checkbox">
 				<placement x="%col1_x%" y="%row4_text_y%" />
 				<font resource="font" color="%text_color%" />
-				<text>Enable MD5 verification of backup files.</text>
+				<text>开启MD5检验.</text>
 				<data variable="tw_skip_md5_check" />
 				<image checked="checkbox_true" unchecked="checkbox_false" />
 			</object>
@@ -2402,7 +2402,7 @@
 			<object type="checkbox">
 				<placement x="%col1_x%" y="%row5_text_y%" />
 				<font resource="font" color="%text_color%" />
-				<text>Use Military Time.</text>
+				<text>使用24小时制.</text>
 				<data variable="tw_military_time" />
 				<image checked="checkbox_true" unchecked="checkbox_false" />
 			</object>
@@ -2410,7 +2410,7 @@
 			<object type="checkbox">
 				<placement x="%col1_x%" y="%row6_text_y%" />
 				<font resource="font" color="%text_color%" />
-				<text>Simulate actions for theme testing.</text>
+				<text>模拟操作（用来装逼吓人）.</text>
 				<data variable="tw_simulate_actions" />
 				<image checked="checkbox_true" unchecked="checkbox_false" />
 			</object>
@@ -2419,7 +2419,7 @@
 				<condition var1="tw_simulate_actions" var2="1" />
 				<placement x="%col1_x%" y="%row7_text_y%" />
 				<font resource="font" color="%text_color%" />
-				<text>Simulate failure for actions.</text>
+				<text>模拟失败的操作（骗人的）.</text>
 				<data variable="tw_simulate_fail" />
 				<image checked="checkbox_true" unchecked="checkbox_false" />
 			</object>
@@ -2428,7 +2428,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%col1_x%" y="%row3_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Time Zone</text>
+				<text>时区</text>
 				<image resource="main_button" />
 				<action function="page">timezone</action>
 			</object>
@@ -2437,7 +2437,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%col2_x%" y="%row3_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Screen</text>
+				<text>屏幕</text>
 				<image resource="main_button" />
 				<action function="page">screen</action>
 			</object>
@@ -2445,7 +2445,7 @@
 			<object type="button">
 				<placement x="%col_center_x%" y="%row4_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Restore Defaults</text>
+				<text>恢复默认</text>
 				<image resource="main_button" />
 				<action function="restoredefaultsettings"></action>
 			</object>
@@ -2471,7 +2471,7 @@
 				<placement x="%listbox_x%" y="%row1_header_y%" w="%listbox_width%" h="%listbox_tz_height%" />
 				<header background="%fileselector_header_background%" textcolor="%fileselector_header_textcolor%" separatorcolor="%fileselector_header_separatorcolor%" separatorheight="%fileselector_header_separatorheight%" />
 				<fastscroll linecolor="%fastscroll_linecolor%" rectcolor="%fastscroll_rectcolor%" w="%fastscroll_w%" linew="%fastscroll_linew%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
-				<text>Select Time Zone:</text>
+				<text>选择时区:</text>
 				<icon selected="radio_true" unselected="radio_false" />
 				<separator color="%fileselector_separatorcolor%" height="%fileselector_separatorheight%" />
 				<background color="%listbox_background%" />
@@ -2506,7 +2506,7 @@
 			<object type="checkbox">
 				<placement x="%col1_x%" y="%row_dst_text_y%" />
 				<font resource="font" color="%text_color%" />
-				<text>Do you use daylight savings time (DST)?</text>
+				<text>夏时制 (DST)?</text>
 				<data variable="tw_time_zone_guidst" />
 				<image checked="checkbox_true" unchecked="checkbox_false" />
 			</object>
@@ -2587,7 +2587,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_header_y%" placement="5" />
-				<text>Screen Settings</text>
+				<text>屏幕设置</text>
 			</object>
 
 			<object type="button">
@@ -2595,7 +2595,7 @@
 				<font resource="font" color="%text_color%" />
 				<condition var1="tw_screen_timeout_secs" op="=" var2="0" />
 				<condition var1="tw_no_screen_timeout" op="!=" var2="1" />
-				<text>Enable screen timeout.</text>
+				<text>自动关闭屏幕.</text>
 				<image resource="checkbox_false" />
 				<action function="set">tw_screen_timeout_secs=60</action>
 			</object>
@@ -2605,7 +2605,7 @@
 				<font resource="font" color="%text_color%" />
 				<condition var1="tw_screen_timeout_secs" op="!=" var2="0" />
 				<condition var1="tw_no_screen_timeout" op="!=" var2="1" />
-				<text>Enable screen timeout.</text>
+				<text>开启定时关闭屏幕.</text>
 				<image resource="checkbox_true" />
 				<action function="set">tw_screen_timeout_secs=0</action>
 			</object>
@@ -2617,7 +2617,7 @@
 				<font resource="font" color="%text_color%" />
 				<colors line="%slidervalue_line_clr%" slider="%slidervalue_slider_clr%" />
 				<dimensions lineh="%slidervalue_lineh%" linepadding="%slidervalue_padding%" sliderw="%slidervalue_sliderw%" sliderh="%slidervalue_sliderh%" />
-				<text>Screen timeout in seconds:</text>
+				<text>这么多秒没操作关屏:</text>
 				<data variable="tw_screen_timeout_secs" min="15" max="300" />
 			</object>
 
@@ -2627,7 +2627,7 @@
 				<font resource="font" color="%text_color%" />
 				<colors line="%slidervalue_line_clr%" slider="%slidervalue_slider_clr%" />
 				<dimensions lineh="%slidervalue_lineh%" linepadding="%slidervalue_padding%" sliderw="%slidervalue_sliderw%" sliderh="%slidervalue_sliderh%" />
-				<text>Brightness: %tw_brightness_pct%%</text>
+				<text>亮度: %tw_brightness_pct%%</text>
 				<data variable="tw_brightness_pct" min="10" max="100" />
 				<actions>
 					<action function="set">tw_brightness=%tw_brightness_max%</action>
@@ -2656,14 +2656,14 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_header_y%" placement="5" />
-				<text>Advanced</text>
+				<text>高级</text>
 			</object>
 
 			<object type="button">
 				<highlight color="%highlight_color%" />
 				<placement x="%col1_x%" y="%row1_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Copy Log to SD</text>
+				<text>将log复制到SD卡</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_back=advanced</action>
@@ -2680,7 +2680,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%col2_x%" y="%row1_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Fix Permissions</text>
+				<text>权限修复</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_back=advanced</action>
@@ -2699,7 +2699,7 @@
 				<condition var1="tw_allow_partition_sdcard" var2="1" />
 				<placement x="%col1_x%" y="%row2_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Partition SD Card</text>
+				<text>SD卡分区</text>
 				<image resource="main_button" />
 				<action function="page">partsdcard</action>
 			</object>
@@ -2708,7 +2708,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%col2_x%" y="%row2_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>File Manager</text>
+				<text>文件管理器</text>
 				<image resource="main_button" />
 				<action function="page">filemanagerlist</action>
 			</object>
@@ -2717,7 +2717,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%col1_x%" y="%row3_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Terminal Command</text>
+				<text>终端</text>
 				<image resource="main_button" />
 				<action function="page">terminalfolder</action>
 			</object>
@@ -2726,7 +2726,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%col2_x%" y="%row3_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Reload Theme</text>
+				<text>重载主题</text>
 				<image resource="main_button" />
 				<action function="reload"></action>
 			</object>
@@ -2755,7 +2755,7 @@
 				<condition var1="tw_has_injecttwrp" var2="1" />
 				<placement x="%col2_x%" y="%row4_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Re-Inject TWRP</text>
+				<text>重载TWRP</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_back=advanced</action>
@@ -2787,7 +2787,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_header_y%" placement="5" />
-				<text>Partition SD Card</text>
+				<text>SD卡分区</text>
 			</object>
 
 			<object type="button">
@@ -2811,7 +2811,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%sdext_text_x%" y="%sdext_text_y%" />
-				<text>EXT Size: %tw_sdext_size%</text>
+				<text>EXT 大小: %tw_sdext_size%</text>
 			</object>
 
 			<object type="button">
@@ -2835,13 +2835,13 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%sdswap_text_x%" y="%sdswap_text_y%" />
-				<text>Swap Size: %tw_swap_size%</text>
+				<text>Swap 大小: %tw_swap_size%</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%col1_x%" y="%sdfilesystem_text_y%" />
-				<text>File system: %tw_sdpart_file_system%</text>
+				<text>文件系统: %tw_sdpart_file_system%</text>
 			</object>
 
 			<object type="button">
@@ -2866,13 +2866,13 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%col1_x%" y="%row12_text_y%" />
-				<text>You will lose all files on your SD card!</text>
+				<text>你将丢失所有数据哦!</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%col1_x%" y="%row13_text_y%" />
-				<text>This action cannot be undone!</text>
+				<text>操作不可恢复!</text>
 			</object>
 
 			<object type="slider">
@@ -2885,9 +2885,9 @@
 					<action function="set">tw_has_action2=1</action>
 					<action function="set">tw_action2=set</action>
 					<action function="set">tw_action2_param=tw_zip_location=/sdcard</action>
-					<action function="set">tw_action_text1=Partitioning SD Card...</action>
+					<action function="set">tw_action_text1=正在分区...</action>
 					<action function="set">tw_action_text2=This will take a few minutes.</action>
-					<action function="set">tw_complete_text1=Partitioning Complete</action>
+					<action function="set">tw_complete_text1=完毕</action>
 					<action function="page">action_page</action>
 				</actions>
 			</object>
@@ -2895,7 +2895,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%slider_text_y%" placement="4" />
-				<text>Swipe to Partition</text>
+				<text>滑动开始分区</text>
 			</object>
 
 			<object type="action">
@@ -3014,7 +3014,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_header_y%" placement="5" />
-				<text>File Manager: Select a File or Folder</text>
+				<text>文件管理器:选择一个文件或文件夹</text>
 			</object>
 
 			<object type="fileselector">
@@ -3064,7 +3064,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%filemanager_select_x%" y="%filemanager_select_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Select</text>
+				<text>选择</text>
 				<image resource="medium_button" />
 				<actions>
 					<action function="set">tw_filename1=tw_file_location1</action>
@@ -3083,7 +3083,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_text_y%" placement="5"/>
-				<text>%tw_fm_type% Selected:</text>
+				<text>%tw_fm_type% 已选择:</text>
 			</object>
 
 			<object type="text" color="%text_color%">
@@ -3097,7 +3097,7 @@
 				<condition var1="tw_fm_isfolder" var2="0" />
 				<placement x="%col1_x%" y="%row2_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Copy File</text>
+				<text>复制文件</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_filemanager_command=cp</action>
@@ -3111,7 +3111,7 @@
 				<condition var1="tw_fm_isfolder" var2="1" />
 				<placement x="%col1_x%" y="%row2_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Copy Folder</text>
+				<text>复制文件夹</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_filemanager_command=cd &quot;%tw_file_location1%&quot; && cd .. && cp -R</action>
@@ -3124,7 +3124,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%col2_x%" y="%row2_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Move</text>
+				<text>移动</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_filemanager_command=mv</action>
@@ -3170,7 +3170,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%col1_x%" y="%row4_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Delete</text>
+				<text>删除</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_filemanager_command=rm -rf</action>
@@ -3188,7 +3188,7 @@
 				<condition var1="tw_fm_isfolder" var2="0" />
 				<placement x="%col2_x%" y="%row4_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Rename File</text>
+				<text>重命名文件</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_filemanager_rename=tw_selection1</action>
@@ -3203,7 +3203,7 @@
 				<condition var1="tw_fm_isfolder" var2="1" />
 				<placement x="%col2_x%" y="%row4_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Rename Folder</text>
+				<text>重命名文件夹</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_filemanager_rename=tw_selection1</action>
@@ -3232,7 +3232,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_header_y%" placement="5"/>
-				<text>Browse to Destination Folder & Press Select</text>
+				<text>浏览目标的文件夹 & 按选择键</text>
 			</object>
 
 			<object type="fileselector">
@@ -3268,7 +3268,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%filemanager_select_x%" y="%filemanager_select_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Select</text>
+				<text>选择</text>
 				<image resource="medium_button" />
 				<actions>
 					<action function="set">tw_fm_text2=to</action>
@@ -3312,7 +3312,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%col_center_x%" y="%row2_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Cancel</text>
+				<text>取消</text>
 				<image resource="main_button" />
 				<action function="page">filemanageroptions</action>
 			</object>
@@ -3362,7 +3362,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%col_center_x%" y="%row2_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Cancel</text>
+				<text>取消</text>
 				<image resource="main_button" />
 				<action function="page">filemanageroptions</action>
 			</object>
@@ -3388,7 +3388,7 @@
 			<object type="text" color="%text_color%">
 				<placement x="%center_x%" y="%row1_header_y%" placement="5" />
 				<font resource="font" />
-				<text>Please Enter New Permissions</text>
+				<text>输入一个新的权限</text>
 			</object>
 
 			<object type="input">
@@ -3411,7 +3411,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%col_center_x%" y="%row2_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Cancel</text>
+				<text>取消</text>
 				<image resource="main_button" />
 				<action function="page">filemanageroptions</action>
 			</object>
@@ -3461,7 +3461,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row10_text_y%" placement="5"/>
-				<text>Press back button to cancel.</text>
+				<text>按返回键取消.</text>
 			</object>
 
 			<object type="slider">
@@ -3473,7 +3473,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%slider_text_y%" placement="4" />
-				<text>Swipe to Confirm</text>
+				<text>滑动确认操作</text>
 			</object>
 
 			<object type="action">
@@ -3547,7 +3547,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_header_y%" placement="5" />
-				<text>Please Enter Your Password</text>
+				<text>请输入密码</text>
 			</object>
 
 			<object type="input">
@@ -3567,7 +3567,7 @@
 				<condition var1="tw_password_fail" var2="1" />
 				<font resource="font" />
 				<placement x="%center_x%" y="%row4_text_y%" placement="5" />
-				<text>Password Failed, Please Try Again</text>
+				<text>密码错误，请重试</text>
 			</object>
 
 			<object type="button">
@@ -3593,7 +3593,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_text_y%" placement="5" />
-				<text>Trying Decryption with Your Password</text>
+				<text>尝试用您的密码解密</text>
 			</object>
 
 			<object type="template" name="action_page_console" />
@@ -3669,7 +3669,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%filemanager_select_x%" y="%filemanager_select_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Select</text>
+				<text>选择</text>
 				<image resource="medium_button" />
 				<actions>
 					<action function="page">terminalcommand</action>
@@ -3711,7 +3711,7 @@
 				<condition var1="tw_terminal_state" var2="1" />
 				<placement x="%filemanager_select_x%" y="%terminal_button_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>KILL</text>
+				<text>杀死</text>
 				<image resource="medium_button" />
 				<action function="killterminal"></action>
 			</object>
@@ -3741,7 +3741,7 @@
 			<object type="checkbox">
 				<placement x="%col1_x%" y="%row2_text_y%" />
 				<font resource="font" color="%text_color%" />
-				<text>Wipe Dalvik Cache.</text>
+				<text>清空Dalvik Cache.</text>
 				<data variable="tw_wipe_dalvik" />
 				<image checked="checkbox_true" unchecked="checkbox_false" />
 			</object>
@@ -3749,7 +3749,7 @@
 			<object type="checkbox">
 				<placement x="%col1_x%" y="%row3_text_y%" />
 				<font resource="font" color="%text_color%" />
-				<text>Wipe Cache.</text>
+				<text>清空 Cache.</text>
 				<data variable="tw_wipe_cache" />
 				<image checked="checkbox_true" unchecked="checkbox_false" />
 			</object>
@@ -3795,32 +3795,32 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_header_y%" placement="5"/>
-				<text>Install SuperSU?</text>
+				<text>安装 SuperSU?</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row2_text_y%" placement="5"/>
-				<text>Your device does not appear to be rooted.</text>
+				<text>你的设备没有root哦.</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row3_text_y%" placement="5"/>
-				<text>Install SuperSU now?</text>
+				<text>现在安装 SuperSU?</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row4_text_y%" placement="5"/>
-				<text>This will root your device.</text>
+				<text>现将帮您root.</text>
 			</object>
 
 			<object type="button">
 				<highlight color="%highlight_color%" />
 				<placement x="%col_center_x%" y="%row3_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Do Not Install</text>
+				<text>别啊，别啊</text>
 				<image resource="main_button" />
 				<action function="set">tw_page_done=1</action>
 			</object>
@@ -3839,7 +3839,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%slider_text_y%" placement="4" />
-				<text>Swipe to Install</text>
+				<text>滑动安装</text>
 			</object>
 		</page>
 	</pages>
